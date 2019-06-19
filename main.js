@@ -5,18 +5,25 @@ var primeNumber = (endNumber) =>{
 	//while(i<endNumber)yield i++
 
 	for (var i=0;i<arrayOfNumbers.length;i++){ //loops through array
-    	if(arrayOfNumbers[i]<2 || (arrayOfNumbers[i]%arrayOfNumbers[i]+1)===0 )
+		if(arrayOfNumbers[i]<2){
+			return false;
+			break;}
+    	 if((arrayOfNumbers[i]%2)===0){
 			    return false;
-    	for(var i=arrayOfNumbers[i]; i<arrayOfNumbers[arrayOfNumbers.length-1]; i++){
+			    break;}}
+			   
+		//else 
+		//return true;
+    	//for(var i=arrayOfNumbers[i]; i<arrayOfNumbers[arrayOfNumbers.length-1]; i++){
 			//selectedPrimeNumbers[]=i;
 			
 		selectedPrimeNumbers.push(arrayOfNumbers[i]); //pushes even numbers to the array called selectedPrimeNumbers
 			//console.log(arrayOfNumbers.length);
-		}
+		
 		console.log(selectedPrimeNumbers);
 	}
 		
 
 
 primeNumber(100);
-//console.log(selectedPrimeNumbers);
+
