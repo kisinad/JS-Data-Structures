@@ -1,4 +1,4 @@
-function primeNumber(endNumber){
+var primeNumber = (endNumber) =>{
 	var selectedPrimeNumbers =[];
 	var arrayOfNumbers = [ ...Array(endNumber).keys() ];//Generates sequencial numbers from 0 to 100 and stores in array arrayOfNumbers
 	//let i=0;
